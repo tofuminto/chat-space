@@ -1,0 +1,24 @@
+.chat__main
+  .chat__main__group--info
+    .group--info
+      %h2.group--info__name test
+      %ul.group--info__member
+        Member：
+        %li.member--list name
+    %a{href: "#", class: "edit--btn"}
+      .edit--btn__frame Edit
+  .chat__main__message--list
+    - 0.upto(2) do |i|
+      .messages
+        .message__user
+          %p.message__user--name name
+          %p.message__user--posting 2020/6/8(Mon) 14:17
+        %p.message test
+  .chat__main__message--form
+    %form.form__box
+      .input__box
+        %input.input__box__text{type: "text", placeholder: "type a message"}
+        %label.input__box__image{for: "image__file"}
+          = icon('far', 'image')
+          %input.input__box__image__file{type: "file", id: "image__file"}
+      %input.submit__btn{type: "submit", value: "Send"}
