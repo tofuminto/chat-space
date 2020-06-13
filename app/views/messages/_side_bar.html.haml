@@ -1,13 +1,14 @@
 .side__bar
   .side__bar__user--name
     .side--header
-      %p.side--header__user name
+      %p.side--header__user
+        = current_user.name
       %ul.header__function
         %li.header__function__btn
           = link_to "#", class: "contents__btn" do
             = icon('far', 'edit', class: "contents__btn--edit")
         %li.header__function__btn
-          = link_to "#", class: "contents__btn" do
+          = link_to edit_user_path(current_user), class: "contents__btn" do
             = icon('fas', 'cog', class: "contents__btn--cog")
   .side__bar__groups
     - 0.upto(1) do |i|
