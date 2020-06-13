@@ -57,3 +57,6 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 
 # font-awesome
 gem 'font-awesome-sass'
+
+# devise-install
+gem 'devise'
