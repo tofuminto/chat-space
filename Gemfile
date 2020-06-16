@@ -62,3 +62,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 
 gem 'pry-rails'
+
+# メッセージ投稿機能 
+gem 'carrierwave'
+gem 'mini_magick'
