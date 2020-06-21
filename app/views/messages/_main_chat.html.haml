@@ -6,7 +6,7 @@
       %ul.group--info__member
         Member：
         %li.member--list
-        - @user.each do |user|
+        - @group.users.each do |user|
           = user.name
     %a{href: 'edit', class: "edit--btn"}
       .edit--btn__frame Edit
