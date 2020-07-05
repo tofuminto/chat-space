@@ -71,7 +71,7 @@ gem 'pry-rails'
 # メッセージ投稿機能 
 gem 'carrierwave'
 gem 'mini_magick'
-
+gem 'fog-aws'
 
 # Appサーバ
 group :production do
